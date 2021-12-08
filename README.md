@@ -2,6 +2,8 @@
 
 ## Overview
 
+Prueba
+
 En este workshop vamos a crear una aplicación utilizando React, Redux, express y Typescript.
 Primero comenzamos por el front-end, usaremos el script de Create React App para generar un boilerplate inicial y sobre el modificar lo necesario para elaborar la aplicación que se describirá a continuación.
 
