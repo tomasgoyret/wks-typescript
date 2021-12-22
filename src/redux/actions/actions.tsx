@@ -2,15 +2,15 @@ import axios from 'axios';
 import { Dispatch } from 'redux';
 import { ActionTypes } from './types';
 
-const url = 'https://localhost:3001/user';
+const url = 'https://localhost:3001/api/user';
 
-interface User {
+export interface User {
 	id: number;
 	name: string;
 	lastName: string;
 }
 
-interface FetchUsersAction {
+export interface FetchUsersAction {
     type: ActionTypes.fetchUsers;
     payload: User[];
   }

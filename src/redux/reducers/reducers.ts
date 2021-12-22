@@ -1,19 +1,13 @@
 import {combineReducers} from 'redux';
+import { usersReducer} from './users'
+import { User } from '../actions/actions';
 
-interface stateI {
-	counter: number;
+export interface StoreState {
+	users: User[];
 }
 
-const initialState : stateI = {
-    counter: 1
-}
-
-interface actionI {
-	type: string;
-}
-
-const rootReducer = combineReducers({
-	counter: () => 1,
+const rootReducer = combineReducers<StoreState>({
+	users : usersReducer,
 });
 
 export default rootReducer
